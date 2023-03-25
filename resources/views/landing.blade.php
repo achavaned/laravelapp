@@ -8,25 +8,26 @@
                 background-color: #222222;
             }
             h1 {
+                display: none; /* Ocultamos el h1 ya que no lo utilizamos */
+            }
+            /* Estilos para los textos secuenciales */
+            #text1, #text2, #text3 {
                 color: #ffffff;
                 font-family: Helvetica, Arial, sans-serif;
                 font-size: 36px;
                 text-align: center;
                 position: absolute;
-                top: 40%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+                width: 100%;
             }
-            /* Estilos para el texto "Número 1" y "Número 2" */
-            p {
-                color: #ffffff;
-                font-size: 24px;
-                font-family: Helvetica, Arial, sans-serif;
-                text-align: center;
-                position: absolute;
-                top: 20%;
-                left: 50%;
-                transform: translate(-50%, -50%);
+            #text1 {
+                font-size: 40px;
+                top: 30%;
+            }
+            #text2 {
+                top: 40%;
+            }
+            #text3 {
+                top: 50%;
             }
             /* Estilos para la calculadora */
             .calculator {
@@ -35,7 +36,7 @@
                 font-family: Helvetica, Arial, sans-serif;
                 text-align: center;
                 position: absolute;
-                top: 50%;
+                top: 60%;
                 left: 50%;
                 transform: translate(-50%, -50%);
             }
@@ -57,8 +58,10 @@
         </style>
     </head>
     <body>
-        <!-- Texto "Bienvenido" en grande -->
-        <h1 id="welcome">¡Bienvenido!</h1>
+        <!-- Divs para los textos secuenciales -->
+        <div id="text1">¡Bienvenido!</div>
+        <div id="text2">Entrega 2 del taller de diseño y construcción</div>
+        <div id="text3">Integrantes: Antoine Chavane - Mateo Aristizabal Diaz - Juan Esteban Escobar Diaz - David Restrepo Ramirez</div>
         <div class="calculator">
             <!-- Formulario para ingresar los números -->
             <form method="post">
