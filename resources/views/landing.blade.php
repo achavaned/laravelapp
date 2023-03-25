@@ -3,7 +3,7 @@
     <head>
         <title>Bienvenido</title>
         <style>
-            /* Estilos para el fondo y el texto "Bienvenido" */
+            /* Estilos para el fondo y el texto "Bienvenido"  */
             body {
                 background-color: #222222;
             }
